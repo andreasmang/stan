@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+
+# figures and files the scripts write when you run them
+hw[0-9][0-9]-*.png
+Rplots.pdf
+
+# Python
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# MATLAB
+*.asv
+
+# editors
+.vscode/
+.idea/
