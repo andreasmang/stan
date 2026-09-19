@@ -76,7 +76,7 @@ A few things to watch for:
 * `plot_function`: sin(x) starts at 0, reaches 1 at π/2, and crosses 0 again at π;
   cos(x) is the same curve shifted left by π/2.
 * `random_numbers`: the first two rows are identical, the third is different, and the
-  "no seed" row changes every time you run the script. The row "seed 42, next 3"
+  "no seed" row changes every time you run the script. The row "seed 2026, next 3"
   starts with the 4th and 5th numbers of the first row.
 * `sample_average`: the three averages agree in the first 15 or so digits; the
   difference, if any, is around 1e-16, which is rounding error. The average is close

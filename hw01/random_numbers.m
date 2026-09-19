@@ -11,15 +11,15 @@
 %  Run:  random_numbers    (at the MATLAB prompt, from this folder)
 
 % ---- seeds and sequences -----------------------------------------------------
-rng(42);        print_row('seed 42', rand(1,5));
-rng(42);        print_row('seed 42 again', rand(1,5));   % the same five numbers
+rng(2026);      print_row('seed 2026', rand(1,5));
+rng(2026);      print_row('seed 2026 again', rand(1,5));   % the same five numbers
 rng(7);         print_row('seed 7', rand(1,5));          % a different sequence
 rng('shuffle'); print_row('no seed', rand(1,5));         % different every time you run this
 
 % drawing more numbers continues the sequence; it does not start it over
-rng(42);
-print_row('seed 42, first 3', rand(1,3));
-print_row('seed 42, next 3', rand(1,3));   % starts with entries 4 and 5 above
+rng(2026);
+print_row('seed 2026, first 3', rand(1,3));
+print_row('seed 2026, next 3', rand(1,3));   % starts with entries 4 and 5 above
 fprintf('\n');
 
 % ---- a few distributions, n = 5 draws each -----------------------------------

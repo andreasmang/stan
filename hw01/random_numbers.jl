@@ -14,15 +14,15 @@ using Random, Printf
 print_row(label, x) = println(rpad(label, 24), join(@sprintf("%9.4f", v) for v in x))
 
 # ---- seeds and sequences -----------------------------------------------------
-Random.seed!(42); print_row("seed 42", rand(5))
-Random.seed!(42); print_row("seed 42 again", rand(5))   # the same five numbers
-Random.seed!(7);  print_row("seed 7", rand(5))          # a different sequence
-Random.seed!();   print_row("no seed", rand(5))         # different every time you run this
+Random.seed!(2026); print_row("seed 2026", rand(5))
+Random.seed!(2026); print_row("seed 2026 again", rand(5))   # the same five numbers
+Random.seed!(7);    print_row("seed 7", rand(5))          # a different sequence
+Random.seed!();     print_row("no seed", rand(5))         # different every time you run this
 
 # drawing more numbers continues the sequence; it does not start it over
-Random.seed!(42)
-print_row("seed 42, first 3", rand(3))
-print_row("seed 42, next 3", rand(3))    # starts with entries 4 and 5 above
+Random.seed!(2026)
+print_row("seed 2026, first 3", rand(3))
+print_row("seed 2026, next 3", rand(3))    # starts with entries 4 and 5 above
 println()
 
 # ---- a few distributions, n = 5 draws each -----------------------------------

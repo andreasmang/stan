@@ -17,19 +17,19 @@ def print_row(label, x):
 
 
 # ---- seeds and sequences -----------------------------------------------------
-rng = np.random.default_rng(42)
-print_row("seed 42", rng.random(5))
-rng = np.random.default_rng(42)
-print_row("seed 42 again", rng.random(5))    # the same five numbers
+rng = np.random.default_rng(2026)
+print_row("seed 2026", rng.random(5))
+rng = np.random.default_rng(2026)
+print_row("seed 2026 again", rng.random(5))    # the same five numbers
 rng = np.random.default_rng(7)
 print_row("seed 7", rng.random(5))           # a different sequence
 rng = np.random.default_rng()
 print_row("no seed", rng.random(5))          # different every time you run this
 
 # drawing more numbers continues the sequence; it does not start it over
-rng = np.random.default_rng(42)
-print_row("seed 42, first 3", rng.random(3))
-print_row("seed 42, next 3", rng.random(3))  # starts with entries 4 and 5 above
+rng = np.random.default_rng(2026)
+print_row("seed 2026, first 3", rng.random(3))
+print_row("seed 2026, next 3", rng.random(3))  # starts with entries 4 and 5 above
 print()
 
 # ---- a few distributions, n = 5 draws each -----------------------------------

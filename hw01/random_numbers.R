@@ -15,15 +15,15 @@ print_row <- function(label, x) {
 }
 
 # ---- seeds and sequences -----------------------------------------------------
-set.seed(42);   print_row("seed 42", runif(5))
-set.seed(42);   print_row("seed 42 again", runif(5))   # the same five numbers
+set.seed(2026); print_row("seed 2026", runif(5))
+set.seed(2026); print_row("seed 2026 again", runif(5))   # the same five numbers
 set.seed(7);    print_row("seed 7", runif(5))          # a different sequence
 set.seed(NULL); print_row("no seed", runif(5))         # different every time you run this
 
 # drawing more numbers continues the sequence; it does not start it over
-set.seed(42)
-print_row("seed 42, first 3", runif(3))
-print_row("seed 42, next 3", runif(3))    # starts with entries 4 and 5 above
+set.seed(2026)
+print_row("seed 2026, first 3", runif(3))
+print_row("seed 2026, next 3", runif(3))    # starts with entries 4 and 5 above
 cat("\n")
 
 # ---- a few distributions, n = 5 draws each -----------------------------------
