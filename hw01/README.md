@@ -7,12 +7,20 @@ and other numbers than the problem does. Each script exists in Python, MATLAB,
 Julia, and R, and the versions do the same thing, so use whichever language you
 have installed.
 
+**Never written a program before?** Start with the notebook `walkthrough.ipynb`. It
+builds one complete small program from nothing, one line at a time, explaining what
+each line does, and it answers a different question than the homework (how the
+average of die rolls settles down). You can read it here on GitHub without installing
+anything, or run it in your browser with
+[Colab](https://colab.research.google.com/github/andreasmang/stan/blob/main/hw01/walkthrough.ipynb).
+
 | Script           | What it shows                                                                                                                                  |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
 | `plot_function`  | evaluate sin(x) and cos(x) on a grid of points, plot them with labels, a legend, and a reference line, and save the figure as `hw01-sine.png` |
 | `random_numbers` | the same seed gives the same sequence of random numbers, a different seed a different one; draws from uniform, normal, and exponential distributions and a die |
 | `sample_average` | the average of 1000 random numbers computed three ways: by hand with a loop, as sum/n, and with the built-in mean                              |
 | `mean_vs_n`      | a loop over the sample sizes n = 5, 10, ..., 1000 that stores one average per n and plots the averages against n                               |
+| `walkthrough.ipynb` | a notebook (Python only) that builds a whole small program step by step, with the output of every step and a troubleshooting list          |
 
 ## Running them
 
@@ -32,6 +40,56 @@ folder you ran it from.
 Run the Julia and R scripts from inside Julia or R, not from a terminal. A script
 started with `julia` closes its plot window as soon as it finishes, and `Rscript` has
 no screen to draw on, so it saves the plot to a file called `Rplots.pdf` instead.
+
+The notebook is Python. Open it in Jupyter (`python3 -m pip install notebook`, then
+`python3 -m notebook`) or in VS Code, or click the Colab link above to run it in a
+browser with nothing installed. Run its cells in order, from the top.
+
+## Putting the pieces together
+
+If you have not programmed before, the hard part is not any single line, it is
+turning the problem into a program. The notebook `walkthrough.ipynb` does exactly
+this, step by step, for a question of the same shape; work through it first and then
+come back here. In short: write the program in English first. The programming
+problem on Homework 1 has five steps:
+
+1. make the list of sample sizes;
+2. make room to store one number for each sample size;
+3. for each sample size: draw that many random numbers, average them, and store
+   the average;
+4. plot the stored averages against the sample size;
+5. do the same for the second distribution.
+
+Each step is in one of the four scripts:
+
+| Step                                   | Script           | What to look at                          |
+|----------------------------------------|------------------|------------------------------------------|
+| 1. the list of sample sizes            | `mean_vs_n`      | the line that builds `nvals`             |
+| 2. room to store one result per size   | `mean_vs_n`      | the line that builds `avg`               |
+| 3. draw that many random numbers       | `random_numbers` | the "a few distributions" block          |
+| 3. average them                        | `sample_average` | the three ways to take a mean            |
+| 3. the loop that fills in the results  | `mean_vs_n`      | the `for` loop                           |
+| 4. plot, label, and save the figure    | `plot_function`  | the plotting block                       |
+
+Start from `mean_vs_n` and change it. It already loops over sample sizes, stores
+one number per size, and plots the result, which is the shape you need; mostly you
+change which distribution is drawn and what the axis labels say.
+
+Four habits that make this much easier:
+
+* **Run after every step.** Do not write the whole program and then run it. Add a
+  line or two, run it, look at the output, then add the next line.
+* **Start small, then grow.** Use ten sample sizes up to 100 before you use a
+  thousand of them up to 10000. A mistake then shows up in a second instead of a
+  minute, and the numbers are small enough to check by eye.
+* **Print what you have.** If you are not sure what is in a variable, print it, and
+  print how many entries it has. Take the prints out at the end.
+* **Read an error from the bottom up.** The last line says what went wrong, and the
+  line above it usually says which line of your code caused it.
+
+If you are stuck for more than ten or fifteen minutes, that is what office hours and
+recitation are for. Bring the code that does not work; a broken attempt is a much
+better starting point than a blank page.
 
 ## Which function does what
 
