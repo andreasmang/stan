@@ -90,12 +90,6 @@ The repository is organised into three folders:
 Each folder has a short README of its own. Material is added section by section as
 the course moves through the syllabus, so pull before you start an assignment.
 
-`demos/` currently holds `insurance.ipynb` (the law of large numbers and the central
-limit theorem applied to risk pooling), `bias_variance.ipynb` (when a biased estimator
-beats an unbiased one) and `dists/` (the mass functions and densities of the common
-distributions, the companion to Appendix A of the lecture notes, which has scripts as
-well as notebooks and so keeps a folder of its own).
-
 Each demo notebook carries its own description, and its output is saved, so it can be
 read straight through on GitHub without running anything, or opened in Colab with
 nothing installed.
