@@ -6,7 +6,7 @@ have installed.
 
 | Language | File                    | Run it from this folder                            | Needs                 |
 |----------|-------------------------|----------------------------------------------------|-----------------------|
-| Python   | `lln_demo.ipynb`        | open in [Colab](https://colab.research.google.com/github/andreasmang/stan/blob/main/rec01/lln_demo.ipynb), or in Jupyter or VS Code | nothing, in Colab |
+| Python   | `lln_demo.ipynb`        | open in [Colab](https://colab.research.google.com/github/andreasmang/stan/blob/main/recitation/rec01/lln_demo.ipynb), or in Jupyter or VS Code | nothing, in Colab |
 | Python   | `running_proportion.py` | `python3 running_proportion.py`                    | `numpy`, `matplotlib` |
 | MATLAB   | `running_proportion.m`  | type `running_proportion` at the prompt            | nothing extra         |
 | Julia    | `running_proportion.jl` | `include("running_proportion.jl")` at the REPL     | `Plots`               |

@@ -7,7 +7,7 @@ do the same thing, so use whichever language you have installed.
 
 | Language | File                 | Run it from this folder                         | Needs                 |
 |----------|----------------------|-------------------------------------------------|-----------------------|
-| Python   | `clt_demo.ipynb`     | open in [Colab](https://colab.research.google.com/github/andreasmang/stan/blob/main/rec02/clt_demo.ipynb), or in Jupyter or VS Code | nothing, in Colab |
+| Python   | `clt_demo.ipynb`     | open in [Colab](https://colab.research.google.com/github/andreasmang/stan/blob/main/recitation/rec02/clt_demo.ipynb), or in Jupyter or VS Code | nothing, in Colab |
 | Python   | `clt_exponential.py` | `python3 clt_exponential.py`                    | `numpy`, `matplotlib` |
 | MATLAB   | `clt_exponential.m`  | type `clt_exponential` at the prompt            | nothing extra         |
 | Julia    | `clt_exponential.jl` | `include("clt_exponential.jl")` at the REPL     | `Plots`               |

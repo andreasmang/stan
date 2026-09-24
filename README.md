@@ -21,7 +21,7 @@ exists in more than one language, the versions do the same thing.
 
 Python examples assume `numpy`, `scipy`, and `matplotlib`. Julia examples assume
 `Plots`. R examples use the base distribution. Download links and install steps are
-in [`hw00/README.md`](hw00/README.md).
+in [`homework/hw00/README.md`](homework/hw00/README.md).
 
 
 ## Getting set up
@@ -79,9 +79,26 @@ easier to work with, but you do not need it.
 git clone https://github.com/andreasmang/stan.git
 ```
 
-Each assignment has its own folder (`hw00/`, `hw01/`, ...) with one script per
-language and a short README. Material is added section by section as the course
-moves through the syllabus, so pull before you start an assignment.
+The repository is organised into three folders:
+
+| Folder        | What is in it                                                                 |
+|---------------|-------------------------------------------------------------------------------|
+| `homework/`   | one folder per assignment (`hw00/`, `hw01/`, ...), with one script per language |
+| `recitation/` | one folder per recitation (`rec01/`, `rec02/`, ...)                             |
+| `demos/`      | worked examples that are not tied to an assignment                              |
+
+Each folder has a short README of its own. Material is added section by section as
+the course moves through the syllabus, so pull before you start an assignment.
+
+`demos/` currently holds `insurance.ipynb` (the law of large numbers and the central
+limit theorem applied to risk pooling), `bias_variance.ipynb` (when a biased estimator
+beats an unbiased one) and `dists/` (the mass functions and densities of the common
+distributions, the companion to Appendix A of the lecture notes, which has scripts as
+well as notebooks and so keeps a folder of its own).
+
+Each demo notebook carries its own description, and its output is saved, so it can be
+read straight through on GitHub without running anything, or opened in Colab with
+nothing installed.
 
 ## What is not here
 

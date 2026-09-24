@@ -12,7 +12,7 @@ builds one complete small program from nothing, one line at a time, explaining w
 each line does, and it answers a different question than the homework (how the
 average of die rolls settles down). You can read it here on GitHub without installing
 anything, or run it in your browser with
-[Colab](https://colab.research.google.com/github/andreasmang/stan/blob/main/hw01/walkthrough.ipynb).
+[Colab](https://colab.research.google.com/github/andreasmang/stan/blob/main/homework/hw01/walkthrough.ipynb).
 
 | Script           | What it shows                                                                                                                                  |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
