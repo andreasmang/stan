@@ -8,10 +8,17 @@ script exists in Python, MATLAB, Julia, and R, and the versions do the same thin
 so use whichever language you have installed. If loops and plots are new to you,
 start with the Homework 1 helpers in `../hw01`.
 
+**Prefer to start in the browser?** The notebook `walkthrough.ipynb` builds the same
+program one step at a time, in Python, with the output of every step and a list of
+what to change for the homework. You can read it here on GitHub without installing
+anything, or run it with
+[Colab](https://colab.research.google.com/github/andreasmang/stan/blob/main/homework/hw04/walkthrough.ipynb).
+
 | Script                | What it shows                                                                                                                         |
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | `average_over_trials` | for n = 3, 4, ..., 100, draw 100 samples of size n, compute an estimator on each, average the 100 values, and plot the averages against n with the exact expected value |
 | `variance_two_ways`   | the variance of one sample computed by dividing by n and by n - 1, by hand and with each language's built-in function                  |
+| `walkthrough.ipynb`   | a notebook (Python only) that builds the same program step by step, with the output of every step and a troubleshooting list           |
 
 The estimator in `average_over_trials` is the square of a sample proportion, used to
 estimate p² for a coin with P(heads) = p = 0.3. It is biased: its expected value is
